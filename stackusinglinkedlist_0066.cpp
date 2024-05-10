@@ -33,7 +33,7 @@ class Stack {
                 cout << "Stack is empty." << endl;
 
             }
-            cout << " Popped value: "
+            cout << " Popped value: " << top->data << endl;
         }
 };
 
