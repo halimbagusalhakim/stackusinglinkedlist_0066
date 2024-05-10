@@ -36,6 +36,20 @@ class Stack {
             cout << " Popped value: " << top->data << endl;
             top = top->next;
         }
+
+        void peek() {
+            if (top == NULL) {
+                cout << " List is empty" << endl;
+            }
+            else {
+                Node* current = top;
+                while (current != NULL) {
+                    cout << current->data << " " << endl;
+                    current = current->next;
+                }
+                cout << endl;
+            }
+        }
 };
 
 int main()
